@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>MoonDust</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <div id="startWindow" class="start-window">
+        <div>
+          <p class="gameTitle">M.O.O.N.D.U.S.T.</p>
+          <p id="textP"></p>
+          <p class="controls1">Controls:</p>
+          <p class="controls">Spacebar: Shoot</p>
+          <p class="controls">Left / Right Arrows: Move</p>
+        </div>
+        <button id="startButton" class="start-button">Start</button>
+      </div>
+    </div>
+
+    <div id="endGameWindow" class="end-game-window">
+      <p class="game-over">Game Over</p>
+
+      <p id="scoreboard" class="scoreBoard"></p>
+      <p id="rankP" class="rank-p"></p>
+      <button class="resetBtn" onClick="window.location.reload();">
+        Restart Game
+      </button>
+      <p class="beatDisclaimer">
+        Feel free to keep enjoying this monster of a beat
+      </p>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/Enemy.js"></script>
+    <script src="js/Player.js"></script>
+    <script src="js/engine-utilities.js"></script>
+    <script src="js/Engine.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/Laser.js"></script>
+    <script src="js/PowerUps.js"></script>
+    <script src="js/Boss.js"></script>
+  </body>
+</html>
